@@ -1,0 +1,20 @@
+<div class="row" width="40%">
+    <div class="col-12 col-md-4">
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/150" width="250" height="300"/>
+
+        </div>
+
+    </div>
+
+    <div class="col-12 col-md-8" width="60%">
+        <h3>Name: {{product.productName}}</h3>
+        <h4>Type: {{product.productType}}</h4>
+        <h4>Category: {{product.productCategory }}</h4>
+        <h4>Quantity: {{product.productPrice | currency: 'INR'}}</h4>
+
+        <a routerLink="/products" class="btn btn-success ml-1">Back</a>
+        <button  (click)="addToCart(product)" class="btn btn-primary">Add to Cart</button>
+    </div>
+    
+</div>

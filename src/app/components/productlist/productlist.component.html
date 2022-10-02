@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col mb-5"  *ngFor="let product of products" >
+      <div class="card h-100 " style="width: 18rem;" >
+          <!-- Product image-->
+          <img (click)="productDetails(product.id)" class="card-img-top" src="https://via.placeholder.com/150" alt="..." />
+          <div class="card-body p-4">
+              <div class="text-center">  
+                  <h5  class="fw-bolder">{{product.productName}}</h5>
+                  <h5  class="fw-bolder">{{product.productPrice | currency: 'INR'}}</h5>
+              </div>
+          </div>
+          <div class="text-center btn-group" >
+            <button (click)="productDetails(product.id)" class="btn btn-outline-dark mt-auto float-left" >Product Details</button>   
+            <button (click)="updateProduct(product.id)" class="btn btn-outline-dark mt-auto float-left" >Product Update</button>
+            <button (click)="deleteProduct(product.id)" class="btn btn-outline-dark mt-auto float-right" >Product Delete</button>
+          </div>          
+      </div>
+
+    </div>
+  </div>

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" routerLink="/products">Online Product Store</a>
+      
+        <div class="nav-item">
+          <a routerLink="/products" routerLinkActive="ative" class="nav-link">View Products</a>
+        </div>
+        <div class="nav-item">
+          <a routerLink="create-product" routerLinkActive="ative" class="nav-link">Create Products</a>
+        </div>
+        <form class="d-flex">
+          <button routerLink="/cart" class="btn btn-outline-dark" type="submit">
+              <i class="bi-cart-fill me-1"></i>
+               View Cart 
+          </button>
+      </form>
+  </div>
+</nav>
+<header class="bg-dark py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="text-center text-white">
+          <h1 class="display-4 fw-bolder">Online Product Store</h1>
+          <p class="lead fw-normal text-white-50 mb-0">Selling only the best things online</p>
+      </div>
+</div>
+</header>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer class=" bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+  </div></footer>
